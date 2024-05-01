@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import Browse from "./Browser";
+import Home from "./Home";
 import Login from "./Login";
 import { RouterProvider } from "react-router-dom";
-const Body = () => {
+const Navigation = () => {
   const appRouter = createBrowserRouter([
     {
       path: "/",
       element: <Login />,
     },
     {
-      path: "/browse",
-      element: <Browse />,
+      path: "/home",
+      element: <Home/>,
     },
   ]);
   return (
@@ -19,4 +19,4 @@ const Body = () => {
     </div>
   );
 };
-export default Body;
+export default Navigation;
